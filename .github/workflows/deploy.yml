@@ -24,6 +24,4 @@ jobs:
  
     - name: Upload Files to S3
       run: |
-        aws s3 sync ./carwebsite s3://car-web7 --delete
-        --exclude ".git/*" \
-        --exclude ".github/*"
+        aws s3 sync ./carwebsite s3://car-web7 --delete --exclude ".git/*" --exclude ".github/*"
